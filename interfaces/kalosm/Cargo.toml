@@ -86,7 +86,7 @@ features = [
 workspace = true
 
 [features]
-default = ["bert", "llama"]
+default = ["bert", "modernbert", "llama"]
 full = ["language", "vision", "sound", "surrealdb"]
 cuda = [
     "kalosm-language?/cublas",
@@ -100,6 +100,7 @@ language = [
     "dep:comfy-table",
 ]
 bert = ["kalosm-language?/bert", "dep:kalosm-common"]
+modernbert = ["kalosm-language?/modernbert", "dep:kalosm-common"]
 llama = ["kalosm-language?/llama", "dep:kalosm-common"]
 prompt_annealing = ["language", "dep:rand", "dep:thiserror", "dep:tracing"]
 metal = [

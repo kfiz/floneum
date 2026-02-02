@@ -4588,6 +4588,7 @@ dependencies = [
  "rbert",
  "readability",
  "reqwest 0.11.27",
+ "rmodernbert",
  "roaring",
  "rss",
  "scraper",
@@ -7330,6 +7331,27 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "rmodernbert"
+version = "0.4.0"
+dependencies = [
+ "anyhow",
+ "fusor-core",
+ "fusor-gguf",
+ "kalosm",
+ "kalosm-common",
+ "kalosm-language-model",
+ "kalosm-model-types",
+ "pollster",
+ "postcard",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.17",
+ "tokenizers",
+ "tokio",
+ "tracing",
 ]
 
 [[package]]

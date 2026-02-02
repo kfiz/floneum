@@ -24,6 +24,8 @@ pub mod language {
     pub use kalosm_language::prelude::Html;
     #[cfg(feature = "bert")]
     pub use kalosm_language::rbert::{Bert, BertBuilder, BertSource};
+    #[cfg(feature = "modernbert")]
+    pub use kalosm_language::rmodernbert::{ModernBert, ModernBertBuilder, ModernBertSource};
     pub use kalosm_language::search::*;
     pub use kalosm_language::vector_db::*;
     pub use kalosm_model_types::{
